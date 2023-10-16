@@ -1,0 +1,14 @@
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\bin\Debug\net6.0\C# advance code Concepts.exe
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\bin\Debug\net6.0\C# advance code Concepts.deps.json
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\bin\Debug\net6.0\C# advance code Concepts.runtimeconfig.json
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\bin\Debug\net6.0\C# advance code Concepts.dll
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\bin\Debug\net6.0\C# advance code Concepts.pdb
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\obj\Debug\net6.0\C# advance code Concepts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\obj\Debug\net6.0\C# advance code Concepts.AssemblyInfoInputs.cache
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\obj\Debug\net6.0\C# advance code Concepts.AssemblyInfo.cs
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\obj\Debug\net6.0\C# advance code Concepts.csproj.CoreCompileInputs.cache
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\obj\Debug\net6.0\C# advance code Concepts.dll
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\obj\Debug\net6.0\refint\C# advance code Concepts.dll
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\obj\Debug\net6.0\C# advance code Concepts.pdb
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\obj\Debug\net6.0\C# advance code Concepts.genruntimeconfig.cache
+C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\C# advance code Concepts\obj\Debug\net6.0\ref\C# advance code Concepts.dll

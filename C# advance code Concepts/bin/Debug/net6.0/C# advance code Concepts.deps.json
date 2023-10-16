@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "C# advance code Concepts/1.0.0": {
+        "runtime": {
+          "C# advance code Concepts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "C# advance code Concepts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
