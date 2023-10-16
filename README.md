@@ -1,4 +1,3 @@
-# C-Advance-Concept-Codes
 
 # C# Code Samples Repository
 
@@ -10,8 +9,7 @@ Welcome to my C# Code Samples repository! This repository contains a collection 
 - [Code Samples](#code-samples)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -21,21 +19,6 @@ In this repository, you'll find a diverse set of C# code samples, each focused o
 
 Here's an overview of the categories and code samples available in this repository:
 
-### Inheritance
-
-- [Sample 1: Basic Inheritance](inheritance/sample1.cs)
-  - Explanation: An example demonstrating basic class inheritance in C#.
-
-- [Sample 2: Method Overriding](inheritance/sample2.cs)
-  - Explanation: Illustrates method overriding in inheritance.
-
-### LINQ
-
-- [Sample 1: LINQ Query Basics](linq/sample1.cs)
-  - Explanation: Introduction to LINQ queries in C#.
-
-- [Sample 2: LINQ with Collections](linq/sample2.cs)
-  - Explanation: Using LINQ to query and manipulate collections.
 
 ### Interfaces
 
@@ -45,13 +28,7 @@ Here's an overview of the categories and code samples available in this reposito
 - [Sample 2: Interface Segregation](interfaces/sample2.cs)
   - Explanation: Applying the Interface Segregation Principle.
 
-### Delegates
 
-- [Sample 1: Basic Delegates](delegates/sample1.cs)
-  - Explanation: Understanding delegates and event handlers.
-
-- [Sample 2: Delegate Lambdas](delegates/sample2.cs)
-  - Explanation: Using lambda expressions with delegates.
 
 ## Getting Started
 
@@ -66,7 +43,6 @@ If you'd like to explore these code samples, follow these steps:
 
 Feel free to use, modify, and learn from these code samples. If you find them helpful, don't forget to give this repository a star!
 
-## Contributing
 
 If you'd like to contribute to this repository by adding more code samples or improving existing ones, please see our [contributing guidelines](CONTRIBUTING.md).
 
