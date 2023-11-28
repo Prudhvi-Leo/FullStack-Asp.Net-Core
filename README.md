@@ -3,7 +3,7 @@
 
 Welcome to my C# Code Samples repository! This repository contains a collection of code samples and projects I've created to practice and showcase various C# concepts and features. Whether you're a beginner or an experienced C# developer, you'll find something useful here.
 
-## Table of Contents
+## Table of  Contents
 
 - [Introduction](#introduction)
 - [Code Samples](#code-samples)
