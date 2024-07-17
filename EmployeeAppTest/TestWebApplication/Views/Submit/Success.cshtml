@@ -1,0 +1,10 @@
+﻿@{
+    var message = TempData["SuccessMessage"] as string;
+}
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <div>@message</div>
+}
+
+<a asp-action="Index">Back to Form</a>

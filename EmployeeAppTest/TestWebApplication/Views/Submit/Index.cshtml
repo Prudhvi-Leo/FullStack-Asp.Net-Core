@@ -1,0 +1,17 @@
+﻿@model TestWebApplication.Models.SubmitForm
+
+<form asp-action="SubmitForm" asp-controller="Home" method="Post">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>

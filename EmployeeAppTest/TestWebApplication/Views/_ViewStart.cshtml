@@ -1,0 +1,17 @@
+﻿@{
+    var controllerName = ViewContext.RouteData.Values["controller"].ToString();
+ 
+
+    if (controllerName == "test1")
+    {
+        Layout = "~/Views/Shared/_HomeLayout.cshtml";
+    }
+    else if (controllerName == "test2")
+    {
+        Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}

@@ -1,0 +1,8 @@
+Writing data using FILE class 
+ hello my name is Prudhvi 
+ I have completed my Btech at 2021
+Writing data using streamWriter/streamReader 
+ i like dancing 
+ i love watching Anime
+Writing data using StreamWriter 
+ i like watching movies

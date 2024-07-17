@@ -1,4 +1,0 @@
-C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfoInputs.cache
-C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfo.cs
-C:\Prudhvi\C# DEV\C-Advance-Concept-Codes\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.CoreCompileInputs.cache

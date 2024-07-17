@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "About Page";
+}
+<title>@ViewData["title"]</title>
+<div class="text-left">
+    <b>Name:</b> @TempData.Peek("Name")
+    <br />
+    <b>Age:</b> @TempData.Peek("Age")
+
+    <b> id : </b> @ViewData["id"]
+</div>

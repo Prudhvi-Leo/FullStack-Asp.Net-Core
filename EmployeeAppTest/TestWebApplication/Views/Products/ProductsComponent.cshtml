@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "View Component Example";
+}
+@{
+    <p>Hello from the Code block</p>
+}
+<div class="text-center">
+    @await Component.InvokeAsync("TopProducts", new { count = 3})
+  <b>@ViewData["Title"]</b>
+</div>

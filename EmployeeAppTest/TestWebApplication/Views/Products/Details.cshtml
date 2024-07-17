@@ -1,0 +1,34 @@
+﻿@model Products;
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = null;
+}
+
+<h4>Product List</h4>
+
+<table class="table">
+    <tr>
+        <th>
+            ProductID
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Category
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Price
+        </th>
+    </tr>
+
+   @*  @foreach (var product in Model)
+    {
+         <partial name="_ProductPartialView" model="product" />  *@
+         @await Html.PartialAsync("_ProductPartialView",Model);
+  @*   } *@
+</table>

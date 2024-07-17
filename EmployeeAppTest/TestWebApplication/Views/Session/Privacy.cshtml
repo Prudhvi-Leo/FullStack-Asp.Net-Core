@@ -1,0 +1,13 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-left">
+    <b>User Name:</b> @HttpContextAccessor?.HttpContext?.Session.GetString("_UserName")
+    <br />
+    <b>User Id:</b> @HttpContextAccessor?.HttpContext?.Session.GetInt32("_UserId")
+</div>

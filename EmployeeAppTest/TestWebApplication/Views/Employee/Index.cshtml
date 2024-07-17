@@ -1,0 +1,38 @@
+﻿@model TestWebApplication.Models.Employee
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Required Field Example</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Enter Your Details</h1>
+        <form method="post" novalidate>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="FirstName" value="@Model?.FirstName">
+                <span class="error">
+                    @if (ViewData.ModelState["FirstName"]?.Errors.Count > 0)
+                    {
+                        <p>@ViewData.ModelState["FirstName"].Errors[0].ErrorMessage</p>
+                    }
+                </span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
