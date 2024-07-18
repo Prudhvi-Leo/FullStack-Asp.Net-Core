@@ -2,52 +2,52 @@
 
 @{
     ViewData["Title"] = "Index";
+    Layout = null;
 }
 
-<h1>Index</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Position)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Department)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Position)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Department.DepartmentId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.EmployeeDBId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.EmployeeDBId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.EmployeeDBId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        <p>
+            <a href="/EmployeeDB/Create" class="btn btn-primary">Create New</a>
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Position</th>
+                    <th>Department</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Email</td>
+                        <td>@item.Position</td>
+                        <td>@item.Department.Name</td>
+                        <td>
+                            <a href="/EmployeeDB/Edit/@item.EmployeeDBId">Edit</a> |
+                            <a href="/EmployeeDB/Details/@item.EmployeeDBId">Details</a> |
+                            <a href="/EmployeeDB/Delete/@item.EmployeeDBId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

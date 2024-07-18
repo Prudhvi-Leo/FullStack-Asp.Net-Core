@@ -2,45 +2,77 @@
 
 @{
     ViewData["Title"] = "Create";
+ 
 }
 
-<h1>Create</h1>
 
-<h4>EmployeeDB</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Position" class="control-label"></label>
-                <input asp-for="Position" class="form-control" />
-                <span asp-validation-for="Position" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DepartmentId" class="control-label"></label>
-                <select asp-for="DepartmentId" class ="form-control" asp-items="ViewBag.DepartmentId"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <h1>Create</h1>
+
+    <h4>EmployeeDB</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form action="/EmployeeDB/Create" method="post">
+                @* @Html.AntiForgeryToken() *@
+                <div class="text-danger">
+                    <!-- Validation summary will be inserted here by JavaScript if there are model errors -->
+                </div>
+                <div class="form-group">
+                    <label for="Name" class="control-label">Name</label>
+                    <input id="Name" name="Name" class="form-control" />
+                    <span id="NameError" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Email" class="control-label">Email</label>
+                    <input id="Email" name="Email" class="form-control" />
+                    <span id="EmailError" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Position" class="control-label">Position</label>
+                    <input id="Position" name="Position" class="form-control" />
+                    <span id="PositionError" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="DepartmentId" class="control-label">Department</label>
+                    <select id="DepartmentId" name="DepartmentId" class="form-control">
+                        <option value="">-- Select Department --</option>
+                        @{
+                            var departmentList = ViewData["DepartmentId"] as IEnumerable<Department>;
+                            
+                        }
+                        @foreach (var department in departmentList)
+                        {
+                            <option value="@department.DepartmentId">@department.Name</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div>
+        <a href="/EmployeeDB/Index">Back to List</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@3.2.11/dist/jquery.validate.unobtrusive.min.js"></script>
+
+</body>
+</html>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -20,7 +20,7 @@ namespace TestWebApplication
             app.UseRouting();
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller}/{action}/{id?}");
+                pattern: "{controller=EmployeeDB}/{action=Index}/{id?}");
             app.Run();
         }
     }

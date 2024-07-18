@@ -47,7 +47,7 @@ namespace TestWebApplication.Controllers
         // GET: EmployeeDB/Create
         public IActionResult Create()
         {
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentId");
+            ViewData["DepartmentId"] = _context.Departments.ToList();
             return View();
         }
 
@@ -55,7 +55,7 @@ namespace TestWebApplication.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("EmployeeDBId,Name,Email,Position,DepartmentId")] EmployeeDB employeeDB)
         {
             if (ModelState.IsValid)
@@ -81,7 +81,7 @@ namespace TestWebApplication.Controllers
             {
                 return NotFound();
             }
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentId", employeeDB.DepartmentId);
+            ViewData["DepartmentId"] =await  _context.Departments.ToListAsync();
             return View(employeeDB);
         }
 
@@ -92,11 +92,7 @@ namespace TestWebApplication.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("EmployeeDBId,Name,Email,Position,DepartmentId")] EmployeeDB employeeDB)
         {
-            if (id != employeeDB.EmployeeDBId)
-            {
-                return NotFound();
-            }
-
+            employeeDB.EmployeeDBId = id;
             if (ModelState.IsValid)
             {
                 try
@@ -117,7 +113,7 @@ namespace TestWebApplication.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentId", employeeDB.DepartmentId);
+            ViewData["DepartmentId"] = _context.Departments;
             return View(employeeDB);
         }
 
